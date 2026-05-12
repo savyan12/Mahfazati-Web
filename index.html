@@ -1,52 +1,91 @@
 <!doctype html>
-<html lang="en">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/main.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Mahfazati - محفظتي</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="app-header">
       <nav class="nav-bar">
         <div class="logo">
-          <img
-            src="./assets/logo.png"
-            alt="Mahfazati Logo"
-            class="logo-image"
-          />
-          <span class="logo-text">محفظتي</span>
+          <span>محفظتي</span>
+          <img src="./assets/logo.png" alt="Logo" />
         </div>
-        <ul class="links">
-          <li class="link active-link"><a href="">الرئيسية</a></li>
-          <li class="link"><a href="">المميزات</a></li>
-          <li class="link"><a href="">الامان</a></li>
-          <li class="link"><a href="">الاسئلة الشائعة</a></li>
+        <ul class="nav-links">
+          <li class="active"><a href="#">الرئيسية</a></li>
+          <li><a href="#">المميزات</a></li>
+          <li><a href="#">الأمان</a></li>
+          <li><a href="#">الأسئلة الشائعة</a></li>
         </ul>
-        <button class="download-btn">حمل التطبيق الأن</button>
+        <button class="nav-cta">حمل التطبيق الآن</button>
       </nav>
     </header>
-    <main class="app-main">
-      <section class="hero-section">
-        <div class="hero-content">
-          <h1 class="hero-title">محفظتك الرقمية الذكية أينما كنت.</h1>
-          <p class="hero-description">
-            أدر أموالك، أرسل واستلم، واستثمر، كل ذلك في مكان واحد ومن جوالك
-            وبأمان تام.
-          </p>
-          <div class="download-btns">
-            <a href="#" class="download-link">
-              <img src="./assets/appStore.png" alt="تحميل من App Store" />
-            </a>
-            <a href="#" class="download-link">
-              <img src="./assets/playStore.png" alt="تحميل من Google Play" />
-            </a>
+
+    <main>
+      <section class="hero">
+        <div class="hero-container">
+          <div class="hero-text">
+            <h1>محفظتك الرقمية الذكية، أينما كنت.</h1>
+            <p>
+              أدر أموالك، أرسل واستلم، واستثمر، كل ذلك في مكان واحد ومن جوالك
+              وبأمان تام.
+            </p>
+            <div class="store-buttons">
+              <a href="#"
+                ><img src="./assets/appStore.png" alt="App Store"
+              /></a>
+              <a href="#"
+                ><img src="./assets/playStore.png" alt="Google Play"
+              /></a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img src="./assets/mobiles.png" alt="App Showcase" />
           </div>
         </div>
+      </section>
 
-        <div class="hero-image">
-          <img src="./assets/mobiles.png" alt="صورة الهواتف الذكية" />
+      <section class="features">
+        <div class="section-title">
+          <h2>إدارة أموالك بسهولة</h2>
+          <p>أدر أموالك، أرسل واستلم، ادفع وسوّي الاستخدام.</p>
+        </div>
+        <div class="features-grid">
+          <div class="card">
+            <div class="icon">
+              <img src="./assets/shield.png" alt="" />
+            </div>
+            <h3>الأمان المتقدم</h3>
+            <p>حماية متطورة لأموالك وبياناتك الشخصية.</p>
+          </div>
+          <div class="card">
+            <div class="icon"><img src="./assets/star.png" alt="" /></div>
+            <h3>إدارة استثماراتك</h3>
+            <p>استثمر بذكاء عبر عروض متنوعة في أسواق المال.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="security-dark">
+        <div class="security-content">
+          <div class="security-info">
+            <h2>أموالك في أمان مطلق</h2>
+            <ul class="check-list">
+              <li>التشفير من طرف إلى طرف End-to-End</li>
+              <li>مصادقة متعددة العوامل Multi-Factor</li>
+              <li>تنبيهات فورية لكل العمليات</li>
+              <li>تحدث بياناتك لحظياً على أعلى معايير الأمان</li>
+            </ul>
+          </div>
+          <div class="security-visual">
+            <div class="shield-container">
+              <img src="./assets/shield.png" alt="Shield" />
+            </div>
+          </div>
         </div>
       </section>
     </main>
