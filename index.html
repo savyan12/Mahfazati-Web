@@ -3,91 +3,285 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="محفظتي تطبيق مالي ذكي لإرسال واستلام الأموال وإدارة الحسابات بأمان."
+    />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./css/main.css" />
-    <title>Mahfazati - محفظتي</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>محفظتي | الصفحة الرئيسية</title>
   </head>
   <body>
-    <header class="app-header">
-      <nav class="nav-bar">
-        <div class="logo">
+    <header class="site-header">
+      <nav class="site-nav container" aria-label="التنقل الرئيسي">
+        <a class="brand" href="./index.html" aria-label="محفظتي">
           <span>محفظتي</span>
-          <img src="./assets/logo.png" alt="Logo" />
-        </div>
+          <img src="./assets/logo.png" alt="" />
+        </a>
+
         <ul class="nav-links">
-          <li class="active"><a href="#">الرئيسية</a></li>
-          <li><a href="#">المميزات</a></li>
-          <li><a href="#">الأمان</a></li>
-          <li><a href="#">الأسئلة الشائعة</a></li>
+          <li>
+            <a class="active" href="./index.html" aria-current="page"
+              >الرئيسية</a
+            >
+          </li>
+          <li><a href="./features.html">المميزات</a></li>
+          <li><a href="./security.html">الأمان</a></li>
+          <li><a href="./faq.html">الأسئلة الشائعة</a></li>
         </ul>
-        <button class="nav-cta">حمل التطبيق الآن</button>
+
+        <a class="nav-download" href="#download">حمل التطبيق الآن</a>
       </nav>
     </header>
 
-    <main>
-      <section class="hero">
-        <div class="hero-container">
-          <div class="hero-text">
+    <main class="home-page">
+      <section class="home-hero hero-surface">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="hero-kicker">محفظتي، سهلة. آمنة.</p>
             <h1>محفظتك الرقمية الذكية، أينما كنت.</h1>
             <p>
               أدر أموالك، أرسل واستلم، واستثمر، كل ذلك في مكان واحد ومن جوالك
               وبأمان تام.
             </p>
-            <div class="store-buttons">
-              <a href="#"
-                ><img src="./assets/appStore.png" alt="App Store"
-              /></a>
-              <a href="#"
-                ><img src="./assets/playStore.png" alt="Google Play"
-              /></a>
+            <div class="store-row" aria-label="روابط تحميل التطبيق">
+              <a href="#" aria-label="تحميل من App Store">
+                <img
+                  src="./assets/appStore.png"
+                  alt="Download on the App Store"
+                />
+              </a>
+              <a href="#" aria-label="تحميل من Google Play">
+                <img src="./assets/playStore.png" alt="Get it on Google Play" />
+              </a>
             </div>
           </div>
-          <div class="hero-image">
-            <img src="./assets/mobiles.png" alt="App Showcase" />
+
+          <div class="phone-stage home-phone-stage" aria-hidden="true">
+            <span class="brand-float brand-float-one">
+              <img src="./assets/logo.png" alt="" />
+            </span>
+            <span class="brand-float brand-float-two">
+              <img src="./assets/logo.png" alt="" />
+            </span>
+            <img class="phones-img" src="./assets/mobiles.png" alt="" />
           </div>
         </div>
       </section>
 
-      <section class="features">
-        <div class="section-title">
-          <h2>إدارة أموالك بسهولة</h2>
-          <p>أدر أموالك، أرسل واستلم، ادفع وسوّي الاستخدام.</p>
+      <section class="home-money section-pad">
+        <div class="container">
+          <div class="section-heading">
+            <h2>إدارة أموالك بسهولة</h2>
+            <p>أدر أموالك، أرسل واستلم، ادفع وسوّي الاستخدام.</p>
+          </div>
+
+          <div class="home-primary-cards">
+            <article class="soft-card feature-card">
+              <span class="card-icon">
+                <img src="./assets/logo.png" alt="" />
+              </span>
+              <h3>السرعة والكفاءة</h3>
+              <p>إدارة معاملاتك فوراً وبكفاءة عالية.</p>
+            </article>
+
+            <article class="soft-card feature-card">
+              <span class="card-icon">
+                <img src="./assets/star.png" alt="" />
+              </span>
+              <h3>إدارة استثماراتك</h3>
+              <p>استثمر بذكاء عبر عروض متنوعة في أسواق المال.</p>
+            </article>
+
+            <article class="soft-card feature-card">
+              <span class="card-icon">
+                <img src="./assets/shield.png" alt="" />
+              </span>
+              <h3>الأمان المتقدم</h3>
+              <p>حماية متطورة لأموالك وبياناتك الشخصية.</p>
+            </article>
+          </div>
         </div>
-        <div class="features-grid">
-          <div class="card">
-            <div class="icon">
+      </section>
+
+      <section class="home-experience">
+        <div class="container">
+          <div class="section-heading">
+            <h2>واجهة مستخدم بلا حدود ومميزات استثنائية</h2>
+          </div>
+
+          <div class="home-small-grid">
+            <article class="soft-card compact-card">
+              <span class="card-icon small">
+                <img src="./assets/logo.png" alt="" />
+              </span>
+              <h3>السرعة والكفاءة</h3>
+              <p>إدارة معاملاتك فوراً وبكفاءة عالية.</p>
+            </article>
+            <article class="soft-card compact-card">
+              <span class="card-icon small">
+                <img src="./assets/star.png" alt="" />
+              </span>
+              <h3>إدارة استثماراتك</h3>
+              <p>استثمر بذكاء عبر عروض متنوعة في أسواق المال.</p>
+            </article>
+            <article class="soft-card compact-card">
+              <span class="card-icon small">
+                <img src="./assets/shield.png" alt="" />
+              </span>
+              <h3>الأمان المتقدم</h3>
+              <p>حماية متطورة لأموالك وبياناتك الشخصية.</p>
+            </article>
+            <article class="soft-card compact-card">
+              <span class="card-icon small symbol-icon">☊</span>
+              <h3>خدمة عملاء 24/7</h3>
+              <p>خدمة دعم فني على مدار الساعة لضمان تجربة سلسة.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-security-section">
+        <div class="container">
+          <div class="dark-security-panel">
+            <div class="security-panel-copy">
+              <p>Security Section</p>
+              <h2>أموالك في أمان مطلق</h2>
+              <ul class="checked-list">
+                <li>التشفير من طرف إلى طرف End-to-End</li>
+                <li>مصادقة متعددة العوامل Multi-Factor</li>
+                <li>تنبيهات فورية لكل العمليات</li>
+                <li>تحديث بياناتك لحظياً على أعلى معايير الأمان</li>
+              </ul>
+            </div>
+            <div class="security-panel-art" aria-hidden="true">
               <img src="./assets/shield.png" alt="" />
             </div>
-            <h3>الأمان المتقدم</h3>
-            <p>حماية متطورة لأموالك وبياناتك الشخصية.</p>
-          </div>
-          <div class="card">
-            <div class="icon"><img src="./assets/star.png" alt="" /></div>
-            <h3>إدارة استثماراتك</h3>
-            <p>استثمر بذكاء عبر عروض متنوعة في أسواق المال.</p>
           </div>
         </div>
       </section>
 
-      <section class="security-dark">
-        <div class="security-content">
-          <div class="security-info">
-            <h2>أموالك في أمان مطلق</h2>
-            <ul class="check-list">
-              <li>التشفير من طرف إلى طرف End-to-End</li>
-              <li>مصادقة متعددة العوامل Multi-Factor</li>
-              <li>تنبيهات فورية لكل العمليات</li>
-              <li>تحدث بياناتك لحظياً على أعلى معايير الأمان</li>
-            </ul>
-          </div>
-          <div class="security-visual">
-            <div class="shield-container">
-              <img src="./assets/shield.png" alt="Shield" />
+      <section class="home-proof section-pad">
+        <div class="container proof-grid">
+          <div class="partners-block">
+            <div class="section-heading right-aligned">
+              <h2>شركاء النجاح والمستثمرون</h2>
+            </div>
+            <div class="partners-grid">
+              <span>Space Capital</span>
+              <span>VC Ventures</span>
+              <span>Kingdom FinTech</span>
+              <span>Global Growth Fund</span>
+              <span>الصفوفى</span>
+              <span>Saudi Tech Hub</span>
             </div>
           </div>
+
+          <div class="home-faq-preview">
+            <div class="section-heading right-aligned">
+              <h2>الأسئلة الشائعة</h2>
+            </div>
+            <div class="mini-faq-list">
+              <details open>
+                <summary>كيف يمكنني فتح حساب؟</summary>
+                <p>
+                  من خلال التطبيق مباشرة، قم بتحميل التطبيق واتبع خطوات التسجيل
+                  السهلة.
+                </p>
+              </details>
+              <details>
+                <summary>هل التحويل مجاني؟</summary>
+                <p>تظهر الرسوم بوضوح قبل تأكيد أي عملية تحويل.</p>
+              </details>
+              <details>
+                <summary>ما هي العملات المدعومة؟</summary>
+                <p>يدعم التطبيق الحسابات والتحويلات المحلية الأساسية.</p>
+              </details>
+              <details>
+                <summary>كيف أسترد أموالي؟</summary>
+                <p>يمكنك التواصل مع الدعم لمراجعة العملية ومساعدتك فوراً.</p>
+              </details>
+              <details>
+                <summary>هل بياناتي آمنة؟</summary>
+                <p>نستخدم طبقات حماية وتشفير لحماية معلوماتك.</p>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="download" class="download-panel">
+        <div class="container download-card">
+          <div class="download-art" aria-hidden="true">
+            <img src="./assets/mobiles.png" alt="" />
+          </div>
+          <div class="download-copy">
+            <h2>جاهز للانضمام إلى المستقبل المالي؟</h2>
+            <p>
+              حمل تطبيق محفظتي الآن وتحكم في أموالك بسهولة وأمان من أي مكان.
+            </p>
+            <div class="store-row compact">
+              <a href="#" aria-label="تحميل من App Store">
+                <img
+                  src="./assets/appStore.png"
+                  alt="Download on the App Store"
+                />
+              </a>
+              <a href="#" aria-label="تحميل من Google Play">
+                <img src="./assets/playStore.png" alt="Get it on Google Play" />
+              </a>
+            </div>
+          </div>
+          <span class="download-float download-float-one" aria-hidden="true">
+            <img src="./assets/logo.png" alt="" />
+          </span>
+          <span class="download-float download-float-two" aria-hidden="true">
+            <img src="./assets/logo.png" alt="" />
+          </span>
         </div>
       </section>
     </main>
+
+    <footer class="site-footer footer-overlap">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a class="brand light" href="./index.html" aria-label="محفظتي">
+            <span>محفظتي</span>
+            <img src="./assets/logo.png" alt="" />
+          </a>
+          <p>محفظتك الرقمية الذكية لإدارة أموالك بكل سهولة وأمان.</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>المميزات</h3>
+          <a href="./features.html">إرسال واستلام</a>
+          <a href="./features.html">الاستثمار</a>
+          <a href="./features.html">الدفع والفواتير</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>الأمان</h3>
+          <a href="./security.html">مركز الأمان</a>
+          <a href="./security.html">الخصوصية</a>
+          <a href="./security.html">الشروط والأحكام</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>الأسئلة الشائعة</h3>
+          <a href="./faq.html">مركز المساعدة</a>
+          <a href="./faq.html">تواصل معنا</a>
+        </div>
+
+        <div class="footer-social">
+          <div class="social-links" aria-label="حسابات التواصل">
+            <a href="#" aria-label="Twitter">X</a>
+            <a href="#" aria-label="Telegram">↗</a>
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">◎</a>
+          </div>
+          <p>حقوق النشر © 2026 محفظتي. جميع الحقوق محفوظة.</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
