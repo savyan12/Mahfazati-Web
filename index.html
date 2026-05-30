@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <title>محفظتي | الصفحة الرئيسية</title>
   </head>
@@ -17,17 +18,23 @@
         </a>
 
         <ul class="nav-links">
-          <li>
-            <a class="active" href="./index.html" aria-current="page"
-              >الرئيسية</a
-            >
-          </li>
+          <li><a class="active" href="./index.html" aria-current="page">الرئيسية</a></li>
           <li><a href="./features.html">المميزات</a></li>
           <li><a href="./security.html">الأمان</a></li>
           <li><a href="./faq.html">الأسئلة الشائعة</a></li>
         </ul>
 
-        <a class="nav-download" href="#download">حمل التطبيق الآن</a>
+        <button
+          class="theme-toggle"
+          type="button"
+          data-theme-toggle
+          aria-label="تفعيل الوضع الداكن"
+          aria-pressed="false"
+        >
+          <i class="bi bi-moon-stars" data-theme-icon aria-hidden="true"></i>
+        </button>
+
+        <a class="nav-download" href="#download"><i class="bi bi-download" aria-hidden="true"></i> حمل التطبيق الآن</a>
       </nav>
     </header>
 
@@ -43,10 +50,7 @@
             </p>
             <div class="store-row" aria-label="روابط تحميل التطبيق">
               <a href="#" aria-label="تحميل من App Store">
-                <img
-                  src="./assets/appStore.png"
-                  alt="Download on the App Store"
-                />
+                <img src="./assets/appStore.png" alt="Download on the App Store" />
               </a>
               <a href="#" aria-label="تحميل من Google Play">
                 <img src="./assets/playStore.png" alt="Get it on Google Play" />
@@ -130,7 +134,7 @@
               <p>حماية متطورة لأموالك وبياناتك الشخصية.</p>
             </article>
             <article class="soft-card compact-card">
-              <span class="card-icon small symbol-icon">☊</span>
+              <span class="card-icon small symbol-icon"><i class="bi bi-headset"></i></span>
               <h3>خدمة عملاء 24/7</h3>
               <p>خدمة دعم فني على مدار الساعة لضمان تجربة سلسة.</p>
             </article>
@@ -214,15 +218,10 @@
           </div>
           <div class="download-copy">
             <h2>جاهز للانضمام إلى المستقبل المالي؟</h2>
-            <p>
-              حمل تطبيق محفظتي الآن وتحكم في أموالك بسهولة وأمان من أي مكان.
-            </p>
+            <p>حمل تطبيق محفظتي الآن وتحكم في أموالك بسهولة وأمان من أي مكان.</p>
             <div class="store-row compact">
               <a href="#" aria-label="تحميل من App Store">
-                <img
-                  src="./assets/appStore.png"
-                  alt="Download on the App Store"
-                />
+                <img src="./assets/appStore.png" alt="Download on the App Store" />
               </a>
               <a href="#" aria-label="تحميل من Google Play">
                 <img src="./assets/playStore.png" alt="Get it on Google Play" />
@@ -271,14 +270,15 @@
 
         <div class="footer-social">
           <div class="social-links" aria-label="حسابات التواصل">
-            <a href="#" aria-label="Twitter">X</a>
-            <a href="#" aria-label="Telegram">↗</a>
-            <a href="#" aria-label="Facebook">f</a>
-            <a href="#" aria-label="Instagram">◎</a>
+            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" aria-label="Telegram"><i class="bi bi-telegram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
           </div>
           <p>حقوق النشر © 2026 محفظتي. جميع الحقوق محفوظة.</p>
         </div>
       </div>
     </footer>
+    <script src="./js/main.js" defer></script>
   </body>
 </html>

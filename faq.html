@@ -8,6 +8,7 @@
       content="إجابات سريعة وواضحة لأهم الأسئلة حول تطبيق محفظتي."
     />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <title>محفظتي | الأسئلة الشائعة</title>
   </head>
@@ -26,7 +27,17 @@
           <li><a class="active" href="./faq.html" aria-current="page">الأسئلة الشائعة</a></li>
         </ul>
 
-        <a class="nav-download" href="./index.html#download">حمل التطبيق الآن</a>
+        <button
+          class="theme-toggle"
+          type="button"
+          data-theme-toggle
+          aria-label="تفعيل الوضع الداكن"
+          aria-pressed="false"
+        >
+          <i class="bi bi-moon-stars" data-theme-icon aria-hidden="true"></i>
+        </button>
+
+        <a class="nav-download" href="./index.html#download"><i class="bi bi-download" aria-hidden="true"></i> حمل التطبيق الآن</a>
       </nav>
     </header>
 
@@ -39,7 +50,7 @@
             <form class="faq-search" action="#" method="get" role="search">
               <label for="faq-search-input">ابحث عن سؤال</label>
               <input id="faq-search-input" type="search" placeholder="ابحث عن سؤال..." />
-              <button type="submit" aria-label="بحث">⌕</button>
+              <button type="submit" aria-label="بحث"><i class="bi bi-search" aria-hidden="true"></i></button>
             </form>
           </div>
 
@@ -59,11 +70,11 @@
       <section class="faq-content section-pad">
         <div class="container">
           <div class="faq-tabs" aria-label="تصنيفات الأسئلة">
-            <a class="active" href="#">الكل <span>▦</span></a>
-            <a href="#">الحساب والأموال <span>▭</span></a>
-            <a href="#">المدفوعات والتحويلات <span>↔</span></a>
-            <a href="#">الأمان والخصوصية <span>⌂</span></a>
-            <a href="#">التطبيق والدعم <span>☊</span></a>
+            <a class="active" href="#">الكل <span><i class="bi bi-grid"></i></span></a>
+            <a href="#">الحساب والأموال <span><i class="bi bi-credit-card"></i></span></a>
+            <a href="#">المدفوعات والتحويلات <span><i class="bi bi-arrow-left-right"></i></span></a>
+            <a href="#">الأمان والخصوصية <span><i class="bi bi-shield-check"></i></span></a>
+            <a href="#">التطبيق والدعم <span><i class="bi bi-headset"></i></span></a>
           </div>
 
           <div class="faq-list">
@@ -84,7 +95,7 @@
 
             <details>
               <summary>
-                <span class="faq-icon symbol-icon">▣</span>
+                <span class="faq-icon symbol-icon"><i class="bi bi-wallet2"></i></span>
                 <strong>كيف يمكنني شحن رصيدي في محفظتي؟</strong>
               </summary>
               <p>يمكنك شحن رصيدك من حسابك البنكي أو بطاقة الدفع المدعومة داخل التطبيق.</p>
@@ -92,7 +103,7 @@
 
             <details>
               <summary>
-                <span class="faq-icon symbol-icon">↔</span>
+                <span class="faq-icon symbol-icon"><i class="bi bi-arrow-left-right"></i></span>
                 <strong>كيف أرسل أو أستقبل الأموال؟</strong>
               </summary>
               <p>اختر جهة الاتصال أو الحساب، أدخل المبلغ، ثم راجع التفاصيل وأكد العملية.</p>
@@ -100,7 +111,7 @@
 
             <details>
               <summary>
-                <span class="faq-icon symbol-icon">▤</span>
+                <span class="faq-icon symbol-icon"><i class="bi bi-server"></i></span>
                 <strong>هل توجد رسوم على التحويلات؟</strong>
               </summary>
               <p>تعرض محفظتي أي رسوم محتملة بوضوح قبل إتمام العملية.</p>
@@ -118,7 +129,7 @@
 
             <details>
               <summary>
-                <span class="faq-icon symbol-icon">◒</span>
+                <span class="faq-icon symbol-icon"><i class="bi bi-eye-slash-fill"></i></span>
                 <strong>هل يمكنني استخدام محفظتي في المتاجر؟</strong>
               </summary>
               <p>يمكنك استخدام وسائل الدفع المتاحة داخل التطبيق لدى الجهات المدعومة.</p>
@@ -136,12 +147,13 @@
 
             <details>
               <summary>
-                <span class="faq-icon symbol-icon">☊</span>
+                <span class="faq-icon symbol-icon"><i class="bi bi-headset"></i></span>
                 <strong>كيف أتواصل مع الدعم الفني؟</strong>
               </summary>
               <p>يمكنك التواصل مع فريق الدعم من مركز المساعدة داخل التطبيق أو من هذه الصفحة.</p>
             </details>
           </div>
+          <p class="faq-empty" data-faq-empty>لا توجد نتائج مطابقة.</p>
         </div>
       </section>
 
@@ -153,7 +165,7 @@
           <div>
             <h2>لم تجد إجابتك؟</h2>
             <p>فريق الدعم لدينا جاهز لمساعدتك</p>
-            <a href="#" class="support-button">تواصل معنا <span>←</span></a>
+            <a href="#" class="support-button">تواصل معنا <span><i class="bi bi-arrow-left"></i></span></a>
           </div>
         </div>
       </section>
@@ -188,14 +200,15 @@
         </div>
         <div class="footer-social">
           <div class="social-links" aria-label="حسابات التواصل">
-            <a href="#" aria-label="Twitter">X</a>
-            <a href="#" aria-label="Telegram">↗</a>
-            <a href="#" aria-label="Facebook">f</a>
-            <a href="#" aria-label="Instagram">◎</a>
+            <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" aria-label="Telegram"><i class="bi bi-telegram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
           </div>
           <p>حقوق النشر © 2026 محفظتي. جميع الحقوق محفوظة.</p>
         </div>
       </div>
     </footer>
+    <script src="./js/main.js" defer></script>
   </body>
 </html>
