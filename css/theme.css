@@ -1,0 +1,183 @@
+.theme-toggle {
+  display: inline-grid;
+  flex: 0 0 auto;
+  width: 43px;
+  height: 43px;
+  place-items: center;
+  border: 1px solid #dcebf3;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 12px 24px rgba(16, 66, 92, 0.08);
+  color: #20b9a4;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1;
+  transition:
+    background 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.theme-toggle i {
+  line-height: 1;
+}
+
+.theme-toggle:hover {
+  border-color: #bde8e4;
+  background: #e8fbf6;
+  box-shadow: 0 16px 28px rgba(35, 174, 190, 0.18);
+  transform: translateY(-2px);
+}
+
+.theme-toggle:focus-visible {
+  outline: 3px solid rgba(37, 199, 167, 0.35);
+  outline-offset: 3px;
+}
+
+.faq-hidden {
+  display: none !important;
+}
+
+.faq-empty {
+  display: none;
+  margin-top: 18px;
+  padding: 18px 22px;
+  border: 1px solid #dcebf3;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 13px 28px rgba(16, 66, 92, 0.06);
+  color: #1d2e45;
+  font-size: 15px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.faq-empty.visible {
+  display: block;
+}
+
+body.dark-mode {
+  background: #061523;
+  color: #e8f7fb;
+}
+
+body.dark-mode::before {
+  background:
+    linear-gradient(180deg, rgba(9, 34, 51, 0.94), rgba(6, 21, 35, 0) 560px),
+    #061523;
+}
+
+body.dark-mode .site-header {
+  background: #061523;
+}
+
+body.dark-mode .brand:not(.light),
+body.dark-mode .nav-links,
+body.dark-mode .nav-links a,
+body.dark-mode .hero-kicker,
+body.dark-mode .hero-copy h1,
+body.dark-mode .section-heading h2,
+body.dark-mode .feature-card h3,
+body.dark-mode .compact-card h3,
+body.dark-mode .summary-strip h3,
+body.dark-mode .tile-copy h3,
+body.dark-mode .trust-strip h3,
+body.dark-mode .protection-card h3,
+body.dark-mode .watch-banner h2,
+body.dark-mode .faq-list strong,
+body.dark-mode .mini-faq-list summary,
+body.dark-mode .faq-tabs a {
+  color: #f4fbff;
+}
+
+body.dark-mode .hero-copy p,
+body.dark-mode .section-heading p,
+body.dark-mode .feature-card p,
+body.dark-mode .compact-card p,
+body.dark-mode .tile-copy p,
+body.dark-mode .summary-strip p,
+body.dark-mode .trust-strip p,
+body.dark-mode .protection-card p,
+body.dark-mode .watch-banner p,
+body.dark-mode .mini-faq-list p,
+body.dark-mode .faq-list p {
+  color: #c8dce8;
+}
+
+body.dark-mode .hero-surface::before {
+  background:
+    linear-gradient(180deg, #061523 0%, #061523 38%, #092033 100%),
+    repeating-radial-gradient(circle at 15% 50%, rgba(37, 199, 167, 0.1) 0 1px, transparent 1px 13px);
+}
+
+body.dark-mode .soft-card,
+body.dark-mode .summary-strip,
+body.dark-mode .trust-strip,
+body.dark-mode .partners-grid span,
+body.dark-mode .mini-faq-list details,
+body.dark-mode .faq-search,
+body.dark-mode .faq-tabs a,
+body.dark-mode .faq-list details,
+body.dark-mode .faq-empty {
+  border-color: #18384d;
+  background: rgba(9, 31, 49, 0.9);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.18);
+}
+
+body.dark-mode .feature-card,
+body.dark-mode .feature-tile,
+body.dark-mode .layer-visual,
+body.dark-mode .watch-banner,
+body.dark-mode .faq-list details[open] {
+  background:
+    linear-gradient(135deg, rgba(13, 46, 66, 0.92), rgba(8, 31, 49, 0.94)),
+    #091f31;
+}
+
+body.dark-mode .card-icon,
+body.dark-mode .faq-icon,
+body.dark-mode .theme-toggle {
+  border-color: #1a4256;
+  background: linear-gradient(145deg, rgba(15, 58, 77, 0.96), rgba(11, 43, 63, 0.98));
+  color: #40d3bb;
+}
+
+body.dark-mode .theme-toggle:hover {
+  border-color: #2f837f;
+  background: #0f3a4d;
+}
+
+body.dark-mode .faq-search input {
+  color: #f4fbff;
+}
+
+body.dark-mode .faq-search input::placeholder {
+  color: #8eabb9;
+}
+
+body.dark-mode .faq-search button {
+  background: #0d2d43;
+  color: #f4fbff;
+}
+
+body.dark-mode .faq-tabs a.active,
+body.dark-mode .faq-tabs a:hover {
+  background: linear-gradient(135deg, #229ed0 0%, #25c7a7 100%);
+  color: #ffffff;
+}
+
+body.dark-mode .support-button {
+  background: #ffffff;
+  color: #20b9a4;
+}
+
+@media (max-width: 680px) {
+  .theme-toggle {
+    width: 38px;
+    height: 38px;
+    font-size: 16px;
+  }
+}
