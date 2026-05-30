@@ -156,19 +156,40 @@
   gap: 18px;
 }
 
-.partners-grid span {
-  display: flex;
+.partner-card {
+  display: grid;
   align-items: center;
   justify-content: center;
-  min-height: 86px;
+  min-height: 158px;
+  gap: 8px;
+  padding: 18px 14px;
   border: 1px solid #dcebf3;
   border-radius: 10px;
   background: #ffffff;
   box-shadow: 0 15px 28px rgba(16, 66, 92, 0.08);
   color: #183047;
-  font-size: 15px;
-  font-weight: 800;
   text-align: center;
+}
+
+.partner-card img {
+  max-width: 105px;
+  max-height: 54px;
+  margin-inline: auto;
+  object-fit: contain;
+}
+
+.partner-card h3 {
+  color: #183047;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.partner-card p {
+  color: #43556a;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.55;
 }
 
 .mini-faq-list {
