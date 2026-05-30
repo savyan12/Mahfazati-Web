@@ -107,6 +107,14 @@ body.dark-mode .faq-list p {
   color: #c8dce8;
 }
 
+body.dark-mode .partner-card h3 {
+  color: #f4fbff;
+}
+
+body.dark-mode .partner-card p {
+  color: #c8dce8;
+}
+
 body.dark-mode .hero-surface::before {
   background:
     linear-gradient(180deg, #061523 0%, #061523 38%, #092033 100%),
@@ -116,7 +124,7 @@ body.dark-mode .hero-surface::before {
 body.dark-mode .soft-card,
 body.dark-mode .summary-strip,
 body.dark-mode .trust-strip,
-body.dark-mode .partners-grid span,
+body.dark-mode .partner-card,
 body.dark-mode .mini-faq-list details,
 body.dark-mode .faq-search,
 body.dark-mode .faq-tabs a,
