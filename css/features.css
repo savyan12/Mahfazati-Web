@@ -65,7 +65,11 @@
   min-height: 276px;
   overflow: hidden;
   background:
-    linear-gradient(135deg, rgba(241, 253, 255, 0.82), rgba(255, 255, 255, 0.92)),
+    linear-gradient(
+      135deg,
+      rgba(241, 253, 255, 0.82),
+      rgba(255, 255, 255, 0.92)
+    ),
     #ffffff;
 }
 
@@ -101,14 +105,13 @@
 
 .tile-phone img {
   position: absolute;
-  right: -56px;
-  bottom: -98px;
-  width: 300px;
-  max-width: none;
-}
+  inset: 0;
 
-.feature-tile:nth-child(even) .tile-phone img {
-  right: -118px;
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+  object-position: center;
 }
 
 .tile-illustration,
@@ -117,7 +120,11 @@
   width: 48%;
   min-height: 276px;
   place-items: center;
-  background: linear-gradient(145deg, rgba(226, 255, 247, 0.72), rgba(230, 246, 255, 0.76));
+  background: linear-gradient(
+    145deg,
+    rgba(226, 255, 247, 0.72),
+    rgba(230, 246, 255, 0.76)
+  );
 }
 
 .tile-illustration img {
@@ -130,7 +137,11 @@
   height: 160px;
   place-items: center;
   border-radius: 50%;
-  background: linear-gradient(135deg, rgba(43, 199, 167, 0.9), rgba(63, 166, 221, 0.9));
+  background: linear-gradient(
+    135deg,
+    rgba(43, 199, 167, 0.9),
+    rgba(63, 166, 221, 0.9)
+  );
   color: #ffffff;
   font-size: 46px;
   letter-spacing: 5px;
